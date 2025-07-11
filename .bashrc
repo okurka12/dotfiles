@@ -60,6 +60,12 @@ gpgencrypt () {
 # decrypt archive created by gpgencrypt
 gpgdecrypt () {
     local ARCHIVENAME=${1%.*}
+
+    if [ -f "$ARCHIVENAME" ]; then
+        echo "$ARCHIVENAME exists, aborting"
+        return
+    fi
+
     cat $1 | gpg -d > "$ARCHIVENAME"
 }
 
