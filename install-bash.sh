@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # one-liner:
-# curl https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main/install-bash.sh > deleteme.sh && chmod +x deleteme.sh && ./deleteme.sh && rm -v deleteme.sh
+# curl https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main/install-bash.sh > deleteme.sh && chmod +x deleteme.sh && ./deleteme.sh && rm -v deleteme.sh && source ~/.bashrc
 #
 # brief:
 # This script lets you install aliases and functions with one command (see
