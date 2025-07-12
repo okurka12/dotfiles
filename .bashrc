@@ -1,10 +1,9 @@
-#
-# this file only contains my additional, custom stuff
-#
+#######################################################
+# this file only contains my additional, custom stuff #
+# paste at the end of original bashrc                 #
+#######################################################
 
 # ALIASES
-# aliases are stored in a separate dotfile, which I have as a gist
-# see https://gist.github.com/okurka12/cc3769db8e6f57dfdf091428095b7e00
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
