@@ -1,8 +1,17 @@
 #!/bin/bash
 
-# one-liner
+# one-liner:
 # curl https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main/install-bash.sh > deleteme.sh && chmod +x deleteme.sh && ./deleteme.sh && rm -v deleteme.sh
-
+#
+# brief:
+# This script lets you install aliases and functions with one command (see
+# above). Previous versions of .bashrc/aliases/functions are kept, you can
+# manually delete them later with the command below (make sure you don't need
+# them)
+#
+# remove old:
+# rm -v .bashrc-old-* .bash_functions-old-* .bash_aliases-old-*
+#
 REPO_URL=https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main
 
 save_old () {
