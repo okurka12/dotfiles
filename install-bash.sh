@@ -9,8 +9,11 @@
 # manually delete them later with the command below (make sure you don't need
 # them)
 #
+# update:
+# also installs nanorc
+#
 # remove old:
-# rm -v .bashrc-old-* .bash_functions-old-* .bash_aliases-old-*
+# rm -v .bashrc-old-* .bash_functions-old-* .bash_aliases-old-* .nanorc-old-*
 #
 REPO_URL=https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main
 
@@ -28,9 +31,11 @@ cd "$HOME" || exit
 save_old .bash_aliases
 save_old .bash_functions
 save_old .bashrc
+save_old .nanorc
 
 curl -O $REPO_URL/.bash_aliases
 curl -O $REPO_URL/.bash_functions
+curl -O $REPO_URL/.nanorc
 curl $REPO_URL/.bashrc >> .bashrc
 
 echo "aliases and functions installed"
