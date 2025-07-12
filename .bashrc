@@ -70,6 +70,19 @@ gpgdecrypt () {
 }
 
 
+# shred -u recursively on directories
+shredall () {
+
+    # this way it works for filenames with spaces
+    find $@ | while read FILE; do
+        if [ -f "$FILE" ]; then
+            echo "$FILE"
+            shred -u "$FILE"
+        fi
+    done
+}
+
+
 # necessary for using gpg
 export GPG_TTY=$(tty)
 
