@@ -38,6 +38,6 @@ curl -O $REPO_URL/.bash_functions
 curl -O $REPO_URL/.nanorc
 curl $REPO_URL/.bashrc >> .bashrc
 
-echo "aliases and functions installed"
+echo "aliases, functions and nanorc installed"
 
 cd "$GO_BACK_TO" || exit
