@@ -11,7 +11,7 @@ cdd () {
 gpgencrypt () {
 
     # help text
-    if [ "$1" = "--help" ]; then
+    if [ "$1" = "--help" -o "$1" = "" ]; then
         echo "Usage: gpgencrypt ARCHIVENAME FILES"
         return
     fi
@@ -47,6 +47,12 @@ gpgencrypt () {
 
 # decrypt archive created by gpgencrypt
 gpgdecrypt () {
+
+    if [ "$1" = "" ]; then
+        echo "Usage: gpgdecrypt ARCHIVE"
+        return
+    fi
+
     local ARCHIVENAME=${1%.*}
 
     if [ -f "$ARCHIVENAME" ]; then
@@ -55,6 +61,7 @@ gpgdecrypt () {
     fi
 
     cat $1 | gpg -d > "$ARCHIVENAME"
+    echo "$ARCHIVENAME"
 }
 
 
