@@ -17,6 +17,9 @@ alias py12=python3.12
 alias vgall="valgrind -s --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes --num-callers=60"
 alias lnhelp="echo ln -s TARGET LINK_NAME"
 
+alias viewkeys='cat "$HOME/.ssh/authorized_keys"'
+alias editkeys='nano "$HOME/.ssh/authorized_keys"'
+
 alias forcereboot="sudo systemctl reboot --force"
 
 # *nix/windows
