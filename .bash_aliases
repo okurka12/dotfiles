@@ -20,6 +20,9 @@ alias lnhelp="echo ln -s TARGET LINK_NAME"
 alias viewkeys='cat "$HOME/.ssh/authorized_keys"'
 alias editkeys='nano "$HOME/.ssh/authorized_keys"'
 
+# use for updating aliases and functions
+alias updatedotfiles='curl https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main/install-bash.sh > deleteme.sh && chmod +x deleteme.sh && ./deleteme.sh && rm -v deleteme.sh && source ~/.bashrc'
+
 alias forcereboot="sudo systemctl reboot --force"
 
 # *nix/windows

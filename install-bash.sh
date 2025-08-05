@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# one-liner:
+# one-liner (also available as updatedotfiles alias):
 # curl https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main/install-bash.sh > deleteme.sh && chmod +x deleteme.sh && ./deleteme.sh && rm -v deleteme.sh && source ~/.bashrc
 #
 # brief:
