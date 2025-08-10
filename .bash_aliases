@@ -20,6 +20,13 @@ alias lnhelp="echo ln -s TARGET LINK_NAME"
 alias viewkeys='cat "$HOME/.ssh/authorized_keys"'
 alias editkeys='nano "$HOME/.ssh/authorized_keys"'
 
+# apt (sapt stands for 'sudo apt')
+alias saptins='sudo apt install'
+alias saptupd='sudo apt update'
+alias saptlis='sudo apt list --upgradable'
+alias saptupg='sudo apt upgrade'
+alias saptupall='sudo apt update && sudo apt list --upgradable && echo "upgrading in 5 seconds..." && sleep 5 && sudo apt upgrade'
+
 # use for updating aliases and functions
 alias updatedotfiles='curl https://raw.githubusercontent.com/okurka12/dotfiles/refs/heads/main/install-bash.sh > deleteme.sh && chmod +x deleteme.sh && ./deleteme.sh && rm -v deleteme.sh && source ~/.bashrc'
 
