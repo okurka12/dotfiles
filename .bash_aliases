@@ -37,3 +37,7 @@ alias dir=ls
 alias where=whereis
 alias ipconfig='ip -c addr'
 alias cls=clear
+
+# ncdu 1.18 on debian 12 used this by default
+# but ncdu 1.22 on debian 13 doesn't
+alias ncdu='ncdu --color dark-bg'
