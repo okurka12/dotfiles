@@ -41,3 +41,20 @@ alias cls=clear
 # ncdu 1.18 on debian 12 used this by default
 # but ncdu 1.22 on debian 13 doesn't
 alias ncdu='ncdu --color dark-bg'
+
+# exit
+alias ee=exit
+alias schluss=exit
+alias ende=exit
+alias ausgang=exit
+alias endung=exit
+alias finito=exit
+alias goodbye=exit
+alias finis=exit
+alias adios=exit
+alias ciao=exit
+alias konec=exit
+alias skonči=exit
+alias ukonči=exit
+alias ukončit=exit
+alias sbohem=exit
