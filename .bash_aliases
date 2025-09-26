@@ -58,3 +58,6 @@ alias skonči=exit
 alias ukonči=exit
 alias ukončit=exit
 alias sbohem=exit
+
+# python venv
+alias svenv='source ./venv/bin/activate'
