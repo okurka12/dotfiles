@@ -58,6 +58,24 @@ alias skonči=exit
 alias ukonči=exit
 alias ukončit=exit
 alias sbohem=exit
+alias odejít=exit
+alias odcházím=exit
+alias odchod=exit
+alias výstup=exit
+alias východisko=exit
+alias východ=exit
+alias quit=exit
+alias leave=exit
+alias ragequit=exit
+alias útěk=exit
+alias únik=exit
+alias zmiezní=exit
+alias odejití=exit
+alias zmizík=exit
+alias odpoj=exit
+alias pryč=exit
+alias odhlášení=exit
+alias odcházím=exit
 
 # python venv
 alias svenv='source ./venv/bin/activate'
