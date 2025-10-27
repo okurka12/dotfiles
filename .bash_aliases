@@ -79,3 +79,5 @@ alias odcházím=exit
 
 # python venv
 alias svenv='source ./venv/bin/activate'
+
+alias list-services="systemctl list-units --type=service --all"
