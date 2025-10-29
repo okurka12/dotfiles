@@ -76,6 +76,7 @@ alias odpoj=exit
 alias pryč=exit
 alias odhlášení=exit
 alias odcházím=exit
+alias baxčus=exit
 
 # python venv
 alias svenv='source ./venv/bin/activate'
