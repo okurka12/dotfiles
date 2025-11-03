@@ -76,3 +76,20 @@ shredall () {
         fi
     done
 }
+
+# like id(1) but for groups
+gid () {
+
+    if [ "$1" = "" ]; then
+        echo "usage: gid GROUPNAME" >&2
+        return
+    fi
+
+    local COUNT=$(grep -c "$1" /etc/group)
+    if [ "$COUNT" = "0" ]; then
+        echo "gid: ‘$1’: no such group" >&2
+        return
+    fi
+
+    getent group "$1" | cut -d: -f3
+}
