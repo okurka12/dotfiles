@@ -11,6 +11,7 @@ alias gitc="git commit"
 alias gitp="git push"
 alias gita='git add'
 alias gitcm='git commit -m'
+alias gitcam='git commit -a -m'
 alias gitp='git push'
 alias py=python3.13
 alias py12=python3.12
