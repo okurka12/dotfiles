@@ -93,3 +93,21 @@ gid () {
 
     getent group "$1" | cut -d: -f3
 }
+
+# random characters
+randomchars () {
+    if [ -e /dev/urandom ]; then
+        local DEVICE=/dev/urandom
+    else
+        local DEVICE=/dev/random
+    fi
+
+    if [ "$1" = "" ]; then
+        local COUNT=64
+    else
+        local COUNT="$1"
+    fi
+
+    cat $DEVICE | tr -dc "[:print:]" | head -c $COUNT
+    echo ""
+}
