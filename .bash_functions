@@ -94,20 +94,27 @@ gid () {
     getent group "$1" | cut -d: -f3
 }
 
-# random characters
-randomchars () {
-    if [ -e /dev/urandom ]; then
-        local DEVICE=/dev/urandom
-    else
-        local DEVICE=/dev/random
-    fi
 
-    if [ "$1" = "" ]; then
+_internal_randomchars_internal_only () {
+
+    if [ "$2" = "" ]; then
         local COUNT=64
     else
-        local COUNT="$1"
+        local COUNT="$2"
     fi
 
-    cat $DEVICE | tr -dc "[:print:]" | head -c $COUNT
+    cat "$1" | tr -dc "[:print:]" | head -c $COUNT
     echo ""
+
+}
+
+
+# random characters with /dev/random
+randomchars () {
+    _internal_randomchars_internal_only /dev/random $1
+}
+
+# random characters with /dev/urandom
+urandomchars () {
+    _internal_randomchars_internal_only /dev/urandom $1
 }
