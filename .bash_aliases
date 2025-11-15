@@ -81,5 +81,6 @@ alias baxčus=exit
 
 # python venv
 alias svenv='source ./venv/bin/activate'
+alias dvenv=deactivate
 
 alias list-services="systemctl list-units --type=service --all"
